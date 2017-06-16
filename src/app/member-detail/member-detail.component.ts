@@ -32,4 +32,9 @@ export class MemberDetailComponent implements OnInit {
     })
   }
 
+  beginPlanting(plantAmount){
+    this.memberToDisplay.planted += parseInt(plantAmount);
+    this.memberService.plantTrees(this.memberToDisplay);
+  }
+
 }

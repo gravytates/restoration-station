@@ -39,8 +39,10 @@ export class MemberService {
     firebaseMemberToDelete.remove();
   }
 
-  // location(city){
-  //   return city;
-  // }
+  plantTrees(someMember){
+    var firebaseMemberToEdit = this.getMemberById(someMember.$key);
+    firebaseMemberToEdit.update({planted: someMember.planted});
+  }
+
 
 }

@@ -14,6 +14,14 @@
       <td>{{memberToDisplay?.removed}}</td>
       <td>{{memberToDisplay?.location}}</td>
     </tr>
+    <tr>
+      <td>Record your plantings below</td>
+      <td>Record your removal below (ft<sup>3</sup>)</td>
+    </tr>
+    <tr>
+      <td><input #newPlant><br><br><button class='btn btn-success' (click)="beginPlanting(newPlant.value); newPlant.value='';">Plant Trees</button></td>
+      <!-- <td><input #newRemove><br><br><button class='btn btn-success' (click)="beginRemoving(newRemove.value); newRemove.value='';">Plant Trees</button></td> -->
+    </tr>
   </tbody>
 </table>
 
