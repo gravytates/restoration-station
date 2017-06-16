@@ -1,3 +1,49 @@
-<p>
-  new-member works!
-</p>
+<div *ngIf="memberForm" class="new-member">
+  <div class="panel panel-default">
+    <div class="panel-heading">
+      <h3 class="panel-title">Add New Member to Restoration Station</h3>
+    </div>
+    <div class="panel-body">
+      <div>
+        <div>
+          <label>Name:</label>
+          <br>
+          <input class="form-control" #newName>
+        </div>
+
+
+        <div class="form-group">
+          <label>Nearest local chapter:</label>
+          <select class="form-control" #newLocation>
+            <option value="portland">Portland</option>
+            <option value="seattle">Seattle</option>
+            <option value="boise">Boise</option>
+            <option value="sanfrancisco">San Francisco</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Role:</label>
+          <select class="form-control" #newRole>
+            <option value="member">Member</option>
+            <option value="board">Board Member</option>
+            <option value="manager">Project Manager</option>
+            <option value="coordinator">Member Coordinator</option>
+          </select>
+        </div>
+
+        <div>
+          <label>Personal Summary:</label>
+          <br>
+          <textarea class="form-control" #newSummary></textarea>
+        </div>
+
+        <br>
+        <button class="btn btn-success" (click)="submitForm(newName.value, newLocation.value, newRole.value, newSummary.value);">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+<div *ngIf="formButton">
+  <button class="btn btn-info" (click)="showForm()">Add New Member</button>
+</div>

@@ -1,36 +1,21 @@
-<div class="row">
-  <div class="col-md-12">
-
-    <h3>Member Name: {{memberToDisplay?.name}}</h3>
-    <table class="table">
-      <thead>
-        <tr>
-          <th>Number of plants planted</th>
-          <th>Invasive species/garbage removed (ft<sup>3</sup>)</th>
-          <th>Local Chapter</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>{{memberToDisplay?.planted}}</td>
-          <td>{{memberToDisplay?.removed}}</td>
-          <td>{{memberToDisplay?.location}}</td>
-        </tr>
-      </tbody>
-    </table>
-
-    <!-- <h4>Local Chapter:  {{memberToDisplay?.location}}</h4>
-    <h5>Number of plants planted: {{memberToDisplay?.planted}}</h5>
-    <h5>Cubic feet of invasive species and garbage remvoed: {{memberToDisplay?.removed}}</h5> -->
-
-
-  </div>
-  <!-- <div class="col-md-4">
-  </div>
-  <div class="col-md-4">
-    <img class="avatar" src="{{memberToDisplay?.image}}" alt="member avatar">
-  </div> -->
-</div>
+<h3>Member Name: {{memberToDisplay?.name}}</h3>
+<h4>Role at Restoration Station: {{memberToDisplay?.role}}</h4>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Number of plants planted</th>
+      <th>Invasive species/garbage removed (ft<sup>3</sup>)</th>
+      <th>Local Chapter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{memberToDisplay?.planted}}</td>
+      <td>{{memberToDisplay?.removed}}</td>
+      <td>{{memberToDisplay?.location}}</td>
+    </tr>
+  </tbody>
+</table>
 
 <div class="well">
   <p>Summary</p>
