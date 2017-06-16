@@ -6,6 +6,10 @@ import { routing } from './app.routing';
 import { masterFirebaseConfig } from './api-keys';
 import { AngularFireModule } from 'angularfire2';
 import { AngularFireDatabaseModule } from 'angularfire2/database';
+import { Observable } from 'rxjs/Observable';
+import { AngularFireAuth } from 'angularfire2/auth';
+import * as firebase from 'firebase/app';
+
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
@@ -16,6 +20,7 @@ import { EditMemberComponent } from './edit-member/edit-member.component';
 import { LocationPipe } from './location.pipe';
 import { RolePipe } from './role.pipe';
 import { AboutComponent } from './about/about.component';
+import { LoginComponent } from './login/login.component';
 
 export const firebaseConfig = {
   apiKey: masterFirebaseConfig.apiKey,
@@ -34,7 +39,8 @@ export const firebaseConfig = {
     EditMemberComponent,
     LocationPipe,
     RolePipe,
-    AboutComponent
+    AboutComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,17 @@
+<div id="get-logged">
+  <li class='click' *ngIf="loggedOut" (click)="goToForm()">admin login</li>
+
+  <div *ngIf="logInForm">
+    <label>Email</label>
+    <input #email>
+    <label>Password</label>
+    <input type="password" #password>
+
+    <button class="btn btn-default" (click)="login(email.value, password.value)" routerLink="admin">Admin Login</button>
+  </div>
+
+  <div *ngIf="loggedIn">
+    <li id="adminName" *ngIf="(user | async)?.email != undefined"> Welcome, {{ (user | async)?.email}} </li>
+    <button id="log-out-btn" class="btn btn-default" (click)="logout()" routerLink="">Admin Logout</button>
+  </div>
+</div>

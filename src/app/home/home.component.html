@@ -21,8 +21,14 @@
         <th>Name</th>
         <th>Role</th>
         <th>Local Chapter</th>
-        <th *ngIf="currentRoute === '/admin'">Plants Planted</th>
-        <th *ngIf="currentRoute === '/admin'">Invasive species/garbage removed (ft<sup>3</sup>)</th>
+        <th *ngIf="currentRoute === '/admin'">Plants Planted
+          <!-- <span class="click" (click)="sortNumeric('planted', 1)">&#9650;</span>
+          <span class="click" (click)="sortNumeric('planted', -1)">&#9660;</span> -->
+        </th>
+        <th *ngIf="currentRoute === '/admin'">Invasive species/garbage removed (ft<sup>3</sup>)
+          <!-- <span class="click" (click)="sortNumeric('removed', 1)">&#9650;</span>
+          <span class="click" (click)="sortNumeric('removed', -1)">&#9660;</span> -->
+        </th>
         <th *ngIf="currentRoute === '/admin'">Edit Details</th>
       </tr>
     </thead>
@@ -30,8 +36,8 @@
 
       <tr>
         <td><h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4></td>
-        <td><p (click)="goToDetail(member)">{{member.role}}</p></td>
-        <td><p (click)="goToDetail(member)">{{member.location}}</p></td>
+        <td class="click" (click)="goToDetail(member)">{{member.role}}</td>
+        <td class="click" (click)="goToDetail(member)">{{member.location}}</td>
         <td *ngIf="currentRoute === '/admin'">{{member.planted}}</td>
         <td *ngIf="currentRoute === '/admin'">{{member.removed}}</td>
         <td *ngIf="currentRoute === '/admin'"><app-edit-member [selectedMember]="member"></app-edit-member></td>

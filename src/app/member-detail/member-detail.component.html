@@ -1,33 +1,37 @@
-<h3>Member Name: {{memberToDisplay?.name}}</h3>
-<h4>Role: {{memberToDisplay?.role}}</h4>
-<table class="table">
-  <thead>
-    <tr>
-      <th>Number of plants planted</th>
-      <th>Invasive species/garbage removed (ft<sup>3</sup>)</th>
-      <th>Local Chapter</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>{{memberToDisplay?.planted}}</td>
-      <td>{{memberToDisplay?.removed}}</td>
-      <td>{{memberToDisplay?.location}}</td>
-    </tr>
-    <tr>
-      <td>Record your plantings below</td>
-      <td>Record your removal below (ft<sup>3</sup>)</td>
-      <td></td>
-    </tr>
-    <tr>
-      <td><input #newPlant><br><br><button class='btn btn-success' (click)="beginPlanting(newPlant.value); newPlant.value='';">Plant Trees</button></td>
-      <td><input #newRemove><br><br><button class='btn btn-danger' (click)="beginRemoving(newRemove.value); newRemove.value='';">Take out bad guys</button></td>
-      <td></td>
-    </tr>
-  </tbody>
-</table>
+<div class="container">
 
-<div class="well">
-  <p>Summary</p>
-  <p>{{memberToDisplay?.summary}}</p>
+  <h3>Member Name: {{memberToDisplay?.name}}</h3>
+  <h4>Role: {{memberToDisplay?.role}}</h4>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Number of plants planted</th>
+        <th>Invasive species/garbage removed (ft<sup>3</sup>)</th>
+        <th>Local Chapter</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{memberToDisplay?.planted}}</td>
+        <td>{{memberToDisplay?.removed}}</td>
+        <td>{{memberToDisplay?.location}}</td>
+      </tr>
+      <tr>
+        <td>Record your plantings below</td>
+        <td>Record your removal below (ft<sup>3</sup>)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><input #newPlant><br><br><button class='btn btn-success' (click)="beginPlanting(newPlant.value); newPlant.value='';">Plant Trees</button></td>
+        <td><input #newRemove><br><br><button class='btn btn-danger' (click)="beginRemoving(newRemove.value); newRemove.value='';">Take out bad guys</button></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="well">
+    <p>Summary</p>
+    <p>{{memberToDisplay?.summary}}</p>
+  </div>
+  
 </div>

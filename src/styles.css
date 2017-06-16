@@ -27,6 +27,11 @@
   color: white;
 }
 
+#get-logged {
+  padding-top: 15px;
+  padding-right: 10px;
+}
+
 #aboutHr {
   max-width: 33%;
 }
@@ -37,4 +42,8 @@
 
 #admin-mode {
   text-align: center;
+}
+
+#log-out-btn {
+  float: right;
 }
