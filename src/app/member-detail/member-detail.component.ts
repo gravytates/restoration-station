@@ -37,4 +37,9 @@ export class MemberDetailComponent implements OnInit {
     this.memberService.plantTrees(this.memberToDisplay);
   }
 
+  beginRemoving(removeAmount){
+    this.memberToDisplay.removed += parseInt(removeAmount);
+    this.memberService.pullIvy(this.memberToDisplay);
+  }
+
 }

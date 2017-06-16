@@ -44,5 +44,10 @@ export class MemberService {
     firebaseMemberToEdit.update({planted: someMember.planted});
   }
 
+  pullIvy(oneMember){
+    var firebaseMemberToEdit = this.getMemberById(oneMember.$key);
+    firebaseMemberToEdit.update({removed: oneMember.removed});
+  }
+
 
 }
