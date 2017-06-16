@@ -15,7 +15,8 @@
       <th *ngIf="currentRoute === '/admin'">Edit Details</th>
     </tr>
   </thead>
-  <tbody *ngFor="let member of members | async">
+  <tbody *ngFor="let member of members | async | location:filterBy">
+
     <tr>
       <td><h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4></td>
       <td><p (click)="goToDetail(member)">{{member.role}}</p></td>

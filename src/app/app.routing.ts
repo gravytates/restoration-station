@@ -16,6 +16,10 @@ const appRoutes: Routes = [
   {
     path: 'admin',
     component: AdminComponent
+  },
+  {
+    path: 'portland',
+    component: HomeComponent
   }
 
 ];
