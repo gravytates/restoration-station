@@ -1,6 +1,18 @@
 <div *ngIf="currentRoute === '/admin'">
   <app-new-member></app-new-member>
 </div>
+<!-- <br> -->
+
+<div class="form-group">
+  <label>View by Role:</label>
+  <select class="form-control" (change)="onChange($event.target.value)">
+    <option value="all" selected>All Members</option>
+    <option value="member">Members</option>
+    <option value="board">Board of Directors</option>
+    <option value="manager">Project Managers</option>
+    <option value="coordinator">Member Coordinators</option>
+  </select>
+</div>
 
 <h3>Current Members</h3>
 <hr>
@@ -15,7 +27,7 @@
       <th *ngIf="currentRoute === '/admin'">Edit Details</th>
     </tr>
   </thead>
-  <tbody *ngFor="let member of members | async | location:filterBy">
+  <tbody *ngFor="let member of members | async | location:filterBy | role:filterRole">
 
     <tr>
       <td><h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4></td>
