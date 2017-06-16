@@ -22,7 +22,7 @@
       <td><p (click)="goToDetail(member)">{{member.location}}</p></td>
       <td *ngIf="currentRoute === '/admin'">{{member.planted}}</td>
       <td *ngIf="currentRoute === '/admin'">{{member.removed}}</td>
-      <td *ngIf="currentRoute === '/admin'"><app-edit-member></app-edit-member></td>
+      <td *ngIf="currentRoute === '/admin'"><app-edit-member [selectedMember]="member"></app-edit-member></td>
     </tr>
   </tbody>
 </table>

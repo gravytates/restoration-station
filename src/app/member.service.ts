@@ -23,4 +23,20 @@ export class MemberService {
     this.members.push(newMember);
   }
 
+  editMember(anyMember){
+  var firebaseMemberToEdit = this.getMemberById(anyMember.$key);
+  firebaseMemberToEdit.update({name: anyMember.name,
+    location: anyMember.location,
+    role: anyMember.role,
+    summary: anyMember.summary,
+    removed: anyMember.removed,
+    planted: anyMember.planted,
+  });
+}
+
+  deleteMember(localMember){
+  var firebaseMemberToDelete = this.getMemberById(localMember.$key);
+  firebaseMemberToDelete.remove();
+}
+
 }

@@ -1,3 +1,56 @@
-<p>
-  edit-member works!
-</p>
+<div *ngIf="editForm" class="new-project">
+  <h3 class="panel-title">Edit Member Details</h3>
+
+  <div>
+    <label>Name:</label>
+    <br>
+    <input class="form-control" [(ngModel)]="selectedMember.name">
+  </div>
+
+  <div class="form-group">
+    <label>Nearest local chapter:</label>
+    <select class="form-control" [(ngModel)]="selectedMember.location">
+      <option value="Portland">Portland</option>
+      <option value="Seattle">Seattle</option>
+      <option value="Boise">Boise</option>
+      <option value="San-Francisco">San Francisco</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label>Role:</label>
+    <select class="form-control" [(ngModel)]="selectedMember.role">
+      <option value="Member">Member</option>
+      <option value="Board">Board Member</option>
+      <option value="Manager">Project Manager</option>
+      <option value="Coordinator">Member Coordinator</option>
+    </select>
+  </div>
+
+  <div>
+    <label>Personal Summary:</label>
+    <br>
+    <textarea class="form-control" [(ngModel)]="selectedMember.summary"></textarea>
+  </div>
+
+
+  <div>
+    <label>Number of plants planted:</label>
+    <br>
+    <input class="form-control" type="number" [(ngModel)]="selectedMember.planted">
+  </div>
+
+  <div>
+    <label>Volume of Invasive species/garbage removed (ft<sup>3</sup>):</label>
+    <br>
+    <input class="form-control" type="number" [(ngModel)]="selectedMember.removed">
+  </div>
+
+  <br>
+  <button class="btn btn-success" (click)="beginUpdatingMember(selectedMember)">Edit</button>
+  <hr>
+  <button class="btn btn-danger" (click)="beginDeletingMember(selectedMember)">Delete Profile</button>
+</div>
+<div *ngIf="formButton">
+  <button class="btn btn-default" (click)="showForm()">Edit Member</button>
+</div>
