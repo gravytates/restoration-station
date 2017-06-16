@@ -4,7 +4,6 @@
   margin-bottom: 0;
 }
 
-
 .click {
    cursor: pointer;
 }
@@ -26,4 +25,16 @@
 
 #aboutLink {
   color: white;
+}
+
+#aboutHr {
+  max-width: 33%;
+}
+
+.memberTable {
+  max-width: 90%;
+}
+
+#admin-mode {
+  text-align: center;
 }

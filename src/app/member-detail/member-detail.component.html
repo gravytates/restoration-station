@@ -17,10 +17,12 @@
     <tr>
       <td>Record your plantings below</td>
       <td>Record your removal below (ft<sup>3</sup>)</td>
+      <td></td>
     </tr>
     <tr>
       <td><input #newPlant><br><br><button class='btn btn-success' (click)="beginPlanting(newPlant.value); newPlant.value='';">Plant Trees</button></td>
       <td><input #newRemove><br><br><button class='btn btn-danger' (click)="beginRemoving(newRemove.value); newRemove.value='';">Take out bad guys</button></td>
+      <td></td>
     </tr>
   </tbody>
 </table>
