@@ -1,3 +1,18 @@
-<p>
-  member-detail works!
-</p>
+<div class="row">
+  <div class="col-md-4">
+    <h3>Member Name: {{memberToDisplay?.name}}</h3>
+    <h3>Location:  {{memberToDisplay?.location}}</h3>
+    <h5>Number of plants planted: {{memberToDisplay?.planted}}</h5>
+    <h5>Cubic feet of invasive species and garbage remvoed: {{memberToDisplay?.removed}}</h5>
+  </div>
+  <div class="col-md-4">
+  </div>
+  <div class="col-md-4">
+    <!-- <img class="avatar" src="{{memberToDisplay?.image}}" alt="member avatar"> -->
+  </div>
+</div>
+
+<div class="well">
+  <p>Summary</p>
+  <p>{{memberToDisplay?.summary}}</p>
+</div>

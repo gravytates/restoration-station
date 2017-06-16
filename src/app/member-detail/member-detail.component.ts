@@ -27,7 +27,9 @@ export class MemberDetailComponent implements OnInit {
     this.route.params.forEach((urlParameters) => {
       this.memberId = urlParameters['id'];
     });
-    this.memberToDisplay = this.memberService.getMemberById(this.memberId);
+    this.memberService.getMemberById(this.memberId).subscribe(lastObserverData => {
+    this.memberToDisplay = lastObserverData;
+    })
   }
 
 }

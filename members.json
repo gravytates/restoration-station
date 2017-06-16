@@ -4,36 +4,42 @@
     "location": "Portland",
     "summary": "Hate english Ivy, love white oak and my wife Rachael.",
     "planted": 50,
-    "removed": 200
+    "removed": 200,
+    "image": "https://previews.123rf.com/images/sararoom/sararoom1303/sararoom130300028/18344729-Vector-illustration-of-Cartoon-Old-man-fishing-Stock-Vector.jpg"
   },{
     "name": "Shelly Sandpaper",
     "location": "Seattle",
     "summary": "The environment is our house and it's under attack",
     "planted": 70,
-    "removed": 210
+    "removed": 210,
+    "image": "https://image.shutterstock.com/z/stock-vector-beautiful-cartoon-woman-presenting-making-a-presentation-gesture-with-her-hand-134817986.jpg"
   },{
     "name": "Timmy Tonesetter",
     "location": "Boise",
     "summary": "I love to play in the woods and streams!",
     "planted": 25,
-    "removed": 45
+    "removed": 45,
+    "image": "https://vignette3.wikia.nocookie.net/jimmyneutron/images/1/1b/Sheen_Estevez-0.png/revision/latest?cb=20160918055557"
   },{
     "name": "Jane Blast",
     "location": "San Francisco",
     "summary": "I'm from a small town originally. Now I want to do my part and hopefully together we can make a difference.",
     "planted": 230,
-    "removed": 720
+    "removed": 720,
+    "image": "https://image.shutterstock.com/z/stock-vector-hipster-girl-drinking-coffee-outdoor-hand-drawn-cartoon-vector-illustration-339623213.jpg"
   },{
     "name": "Rachael Kudzic",
     "location": "Portland",
     "summary": "Working outside with my husband Michael has been a blessing.",
     "planted": 40,
-    "removed": 210
+    "removed": 210,
+    "image": "https://s-media-cache-ak0.pinimg.com/originals/d8/ac/a9/d8aca934c60c7f9392f8828e50b03f4b.jpg"
   },{
     "name": "Frank Daff",
     "location": "Seattle",
     "summary": "If not us, then whom?",
     "planted": 50,
-    "removed": 200
+    "removed": 200,
+    "image": "http://img.clipartall.com/black-hair-clipart-clipart-black-man-clipart-4006_8004.png"
   }]
 }
