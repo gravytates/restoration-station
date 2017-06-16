@@ -1,5 +1,5 @@
 <h3>Current Members</h3>
 
 <div *ngFor="let member of members | async">
-  <p (click)="goToDetail(project)">{{member.name}}</p>
+  <p (click)="goToDetail(member)">{{member.name}}</p>
 </div>
