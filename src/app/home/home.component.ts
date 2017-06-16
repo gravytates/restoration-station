@@ -22,11 +22,11 @@ export class HomeComponent implements OnInit {
     this.members = this.memberService.getMembers();
     if(this.currentRoute === "/portland"){
       this.filterBy = "Portland";
-    } else if (this.currentRoute === "seattle") {
+    } else if (this.currentRoute === "/seattle") {
       this.filterBy = "Seattle";
-    } else if (this.currentRoute === "boise") {
+    } else if (this.currentRoute === "/boise") {
       this.filterBy = "Boise";
-    } else if (this.currentRoute === "san-francisco") {
+    } else if (this.currentRoute === "/san-francisco") {
       this.filterBy = "San-Francisco";
     } else {
       this.filterBy = "all";

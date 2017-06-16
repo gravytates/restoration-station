@@ -20,6 +20,18 @@ const appRoutes: Routes = [
   {
     path: 'portland',
     component: HomeComponent
+  },
+  {
+    path: 'seattle',
+    component: HomeComponent
+  },
+  {
+    path: 'boise',
+    component: HomeComponent
+  },
+  {
+    path: 'san-francisco',
+    component: HomeComponent
   }
 
 ];
