@@ -3,3 +3,8 @@
   max-width: 150px;
   margin-bottom: 0;
 }
+
+
+.click {
+   cursor: pointer;
+}

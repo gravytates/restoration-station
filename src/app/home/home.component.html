@@ -1,5 +1,16 @@
+<div *ngIf="currentRoute === '/admin'">
+  <app-new-member></app-new-member>
+</div>
+
 <h3>Current Members</h3>
+<hr>
 
 <div *ngFor="let member of members | async">
-  <p (click)="goToDetail(member)">{{member.name}}</p>
+  <h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4>
+  <p (click)="goToDetail(member)">Local Chapter: {{member.location}}</p>
+
+  <div *ngIf="currentRoute === '/admin'">
+    <app-edit-member></app-edit-member>
+  </div>
+  <hr>
 </div>

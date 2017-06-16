@@ -1,10 +1,20 @@
-<div class="container-fluid">
-  <div class="jumbotron">
+
+  <div id="jumbotron" class="jumbotron">
     <h1>
       <a routerLink=''>{{title}}</a>
     </h1>
-  </div>
+
 </div>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="">Home</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="admin">admin login</a></li>
+    </ul>
+  </div>
+</nav>
 
 <div class="container">
   <router-outlet></router-outlet>
