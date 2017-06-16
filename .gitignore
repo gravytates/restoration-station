@@ -5,8 +5,12 @@
 /tmp
 /out-tsc
 
+# Firebase
+/src/app/api-keys.ts
+
 # dependencies
 /node_modules
+/bower_components
 
 # IDEs and editors
 /.idea
@@ -36,6 +40,8 @@ testem.log
 # e2e
 /e2e/*.js
 /e2e/*.map
+
+
 
 # System Files
 .DS_Store

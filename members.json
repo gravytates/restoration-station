@@ -1,0 +1,39 @@
+{
+  "members": [{
+    "name": "Michael Kudzic",
+    "location": "Portland",
+    "summary": "Hate english Ivy, love white oak and my wife Rachael.",
+    "planted": 50,
+    "removed": 200
+  },{
+    "name": "Shelly Sandpaper",
+    "location": "Seattle",
+    "summary": "The environment is our house and it's under attack",
+    "planted": 70,
+    "removed": 210
+  },{
+    "name": "Timmy Tonesetter",
+    "location": "Boise",
+    "summary": "I love to play in the woods and streams!",
+    "planted": 25,
+    "removed": 45
+  },{
+    "name": "Jane Blast",
+    "location": "San Francisco",
+    "summary": "I'm from a small town originally. Now I want to do my part and hopefully together we can make a difference.",
+    "planted": 230,
+    "removed": 720
+  },{
+    "name": "Rachael Kudzic",
+    "location": "Portland",
+    "summary": "Working outside with my husband Michael has been a blessing.",
+    "planted": 40,
+    "removed": 210
+  },{
+    "name": "Frank Daff",
+    "location": "Seattle",
+    "summary": "If not us, then whom?",
+    "planted": 50,
+    "removed": 200
+  }]
+}
