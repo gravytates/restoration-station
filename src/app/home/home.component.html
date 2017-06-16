@@ -1,3 +1,5 @@
-<p>
-  home works!
-</p>
+<h3>Current Members</h3>
+
+<div *ngFor="let member of members | async">
+  <p (click)="goToDetail(project)">{{member.name}}</p>
+</div>
