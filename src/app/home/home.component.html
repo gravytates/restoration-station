@@ -4,13 +4,31 @@
 
 <h3>Current Members</h3>
 <hr>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Local Chapter</th>
+      <th *ngIf="currentRoute === '/admin'">Plants Planted</th>
+      <th *ngIf="currentRoute === '/admin'">Invasive species/garbage removed (ft<sup>3</sup>)</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let member of members | async">
+    <tr>
+      <td><h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4></td>
+      <td><p (click)="goToDetail(member)">{{member.location}}</p></td>
+      <td *ngIf="currentRoute === '/admin'">{{member.planted}}</td>
+      <td *ngIf="currentRoute === '/admin'">{{member.removed}}</td>
+    </tr>
+    <div *ngIf="currentRoute === '/admin'">
+      <app-edit-member></app-edit-member>
+    </div>
+  </tbody>
+</table>
 
-<div *ngFor="let member of members | async">
+<!-- <div *ngFor="let member of members | async">
   <h4 class="click" (click)="goToDetail(member)"><em>{{member.name}}</em></h4>
   <p (click)="goToDetail(member)">Local Chapter: {{member.location}}</p>
 
-  <div *ngIf="currentRoute === '/admin'">
-    <app-edit-member></app-edit-member>
-  </div>
   <hr>
-</div>
+</div> -->
