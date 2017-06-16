@@ -1,26 +1,31 @@
-
+<div id="body">
   <div id="jumbotron" class="jumbotron">
     <h1>
       <a routerLink=''>{{title}}</a>
     </h1>
-
-</div>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <ul class="nav navbar-nav navbar-left">
-      <li><a routerLink="">Home</a></li>
-      <li><a routerLink="portland">Portland</a></li>
-      <li><a routerLink="seattle">Seattle</a></li>
-      <li><a routerLink="boise">Boise</a></li>
-      <li><a routerLink="san-francisco">San Francisco</a></li>
-    </ul>
-
-    <ul class="nav navbar-nav navbar-right">
-      <li><a routerLink="admin">admin login</a></li>
-    </ul>
   </div>
-</nav>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li><a routerLink="">Home</a></li>
+        <li><a routerLink="portland">Portland</a></li>
+        <li><a routerLink="seattle">Seattle</a></li>
+        <li><a routerLink="boise">Boise</a></li>
+        <li><a routerLink="san-francisco">San Francisco</a></li>
+      </ul>
 
-<div class="container">
-  <router-outlet></router-outlet>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="admin">admin login</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+    <router-outlet></router-outlet>
+  </div>
 </div>
+<footer class="footer">
+  <div class="container">
+  <a id="aboutLink" routerLink="about">About</a>
+  </div>
+</footer>
