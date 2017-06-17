@@ -23,6 +23,17 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 * As an administrator, I want to edit user profiles, in case I make a mistake, or need to update their details.
 * As an administrator, need the option to delete a user, in case they leave the club or team.
 
+## Screenshots
+
+Admin Account
+![screenshot](src/assets/images/screenshot2.png)
+
+Member Profile
+![screenshot](src/assets/images/screenshot3.png)
+
+Forms
+![screenshot](src/assets/images/screenshot4.png)
+
 ## Prerequisites
 
 You will need the following things properly installed on your computer.
