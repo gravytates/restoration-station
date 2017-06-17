@@ -21,6 +21,9 @@ margin-bottom: 0;
   background-size: cover;
   min-height: 100%;
 }
+.font {
+  font-family: 'Josefin Slab', serif;
+}
 
 .click {
    cursor: pointer;
@@ -38,8 +41,8 @@ margin-bottom: 0;
   position: fixed;
   bottom: 0;
   width: 100%;
-  height: 45px;
-  background-color: darkgrey;
+  height: 40px;
+  background-color: rgb(73,164,99);
   padding: 15px;
   padding-bottom: 20px;
   text-align: center;
@@ -47,6 +50,10 @@ margin-bottom: 0;
 
 #aboutLink {
   color: white;
+  font-size: 20px;
+
+  padding-bottom: 15px;
+  /*margin-top: 5px;*/
 }
 
 #get-logged {
