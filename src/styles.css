@@ -1,7 +1,25 @@
-/* You can add global styles to this file, and also import other style files */
-.avatar {
-  max-width: 150px;
-  margin-bottom: 0;
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+#jumbo {
+text-align: center;
+background: rgba(255,255,255,0.0);
+color: white;
+margin-bottom: 0;
+}
+
+#background {
+  background-image: url(./assets/images/background.jpg);
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100%;
 }
 
 .click {
@@ -9,7 +27,11 @@
 }
 
 #body {
-  margin-bottom: 80px;
+  margin-bottom:125px;
+}
+
+.nav {
+  top: 0;
 }
 
 .footer {
