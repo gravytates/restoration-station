@@ -2,7 +2,7 @@
 
 ![screenshot](src/assets/images/screenshot.png)
 
-[Visit the site!](https://gamer-goals.firebaseapp.com)
+[Visit the site!](https://restoration-station.firebaseapp.com)
 
 Restoration Station can be an organization committed to watershed and ecosystem-wide restoration. This site is a great resource for members of all roles to see and share progress and get connected with other members in our organization. With authenticated^ google sign in for admins, full control has never been easier to add, edit and delete members as necessary. You don't need to be an admin to get in on the fun though, all users have access to their profiles to update and show off their great work!
 
