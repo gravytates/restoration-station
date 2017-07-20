@@ -4,7 +4,7 @@
 
 [Visit the site!](https://restoration-station.firebaseapp.com)
 
-Restoration Station can be an organization committed to watershed and ecosystem-wide restoration. This site is a great resource for members of all roles to see and share progress and get connected with other members in our organization. With authenticated^ google sign in for admins, full control has never been easier to add, edit and delete members as necessary. You don't need to be an admin to get in on the fun though, all users have access to their profiles to update and show off their great work!
+As my week 14 solo code review, the Restoration Station can be an organization committed to watershed and ecosystem-wide restoration. This site is a great resource for members of all roles to see and share progress and get connected with other members in our organization. With authenticated^ google sign in for admins, full control has never been easier to add, edit and delete members as necessary. You don't need to be an admin to get in on the fun though, all users have access to their profiles to update and show off their great work!
 
 ^Authentication is not fully handled at this time, and a few bugs persist at the time of writing. Placeholder credentials are 'g@g.com' and '123456' for email and password fields respectively if you'd like to experience what is near the intended functionality.
 
